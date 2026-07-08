@@ -1,0 +1,60 @@
+{% extends 'main/base.html' %}
+{% block css %}
+<style>
+  
+.form-group select
+{
+    display: flex;
+    justify-items: center;  
+    text-align: center;
+    margin-left: 150px;
+}
+.data2 label
+{
+    color: black;
+    font-size: 25px;
+}
+.data2
+{
+    width: 450px;
+    text-align: center;
+    margin-left: 150px;
+}
+select
+{
+    margin-top: 15px;
+    width: 200px;    
+    font-size: 22px;
+    background-color: rgb(137, 195, 204);
+    border-radius: 15px;
+}
+
+
+</style>
+{% endblock %}
+{% block content %}
+<br><br>
+    
+    <div class="container  con" style="min-height: 100vh; background-color: #f8f9fa;">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-4 col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center disp">
+                        <h1>Select Your Skill Levels</h1>     
+                    </div>
+                    <div class="card-body mt-4">
+                        <form method="POST" class="data2">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.as_p }}
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

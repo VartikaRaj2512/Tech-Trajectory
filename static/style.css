@@ -1,0 +1,33 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.form-group label
+{    font-size: 20px;
+    color: darkcyan;
+    text-align: center;
+}
+.nav-link {
+    font-weight: bold; 
+    color: white;
+    font-size: 18px;   
+}
+
+.navbar-brand{
+    font-weight: bold; 
+    color: white;
+    font-size: 18px;
+}
+.navbar-brand:hover
+{
+    color: white;
+}
+.navbar-nav .nav-link:hover {
+    background-color: white !important; /* White background on hover */
+    color: #333 !important; /* Dark text color on hover */
+    border-radius: 20px;
+    gap: 20px;
+    font-weight: bold; /* Keep the text bold on hover */
+    transition: background-color 0.9s ease, color 0.7s ease;
+}
